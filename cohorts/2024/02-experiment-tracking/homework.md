@@ -14,6 +14,9 @@ Once you installed the package, run the command `mlflow --version` and check the
 
 What's the version that you have?
 
+### Answer
+
+Version 2.12.2
 
 
 ## Q2. Download and preprocess the data
@@ -45,6 +48,10 @@ How many files were saved to `OUTPUT_FOLDER`?
 * 4
 * 7
 
+### Answer
+
+4 files.
+
 
 ## Q3. Train a model with autolog
 
@@ -71,6 +78,10 @@ What is the value of the `min_samples_split` parameter:
 * 8
 * 10
 
+### Answer
+
+2
+
 
 ## Q4. Launch the tracking server locally
 
@@ -89,6 +100,12 @@ In addition to `backend-store-uri`, what else do you need to pass to properly co
 * `serve-artifacts`
 * `artifacts-only`
 * `artifacts-destination`
+
+### Answer
+
+```bash
+mlflow server --backend-store-uri sqlite:////home/ubuntu/mlflow/backend.db --default-artifact-root /home/ubuntu/mlflow/artifacts
+```
 
 
 ## Q5. Tune model hyperparameters
@@ -114,6 +131,10 @@ What's the best validation RMSE that you got?
 * 5.818
 * 6.336
 
+### Answer
+
+5.335
+
 
 ## Q6. Promote the best model to the model registry
 
@@ -134,6 +155,9 @@ What is the test RMSE of the best model?
 * 6.061
 * 6.568
 
+### Answer
+
+5.567
 
 ## Submit the results
 
