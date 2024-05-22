@@ -14,6 +14,9 @@ Once you installed the package, run the command `mlflow --version` and check the
 
 What's the version that you have?
 
+### Answer
+
+Version 2.12.2
 
 
 ## Q2. Download and preprocess the data
@@ -44,6 +47,10 @@ How many files were saved to `OUTPUT_FOLDER`?
 * 3
 * 4
 * 7
+
+### Answer
+
+4 files.
 
 
 ## Q3. Train a model with autolog
