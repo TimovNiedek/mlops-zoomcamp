@@ -78,6 +78,10 @@ What is the value of the `min_samples_split` parameter:
 * 8
 * 10
 
+### Answer
+
+2
+
 
 ## Q4. Launch the tracking server locally
 
@@ -96,6 +100,12 @@ In addition to `backend-store-uri`, what else do you need to pass to properly co
 * `serve-artifacts`
 * `artifacts-only`
 * `artifacts-destination`
+
+### Answer
+
+```bash
+mlflow server --backend-store-uri sqlite:////home/ubuntu/mlflow/backend.db --default-artifact-root /home/ubuntu/mlflow/artifacts
+```
 
 
 ## Q5. Tune model hyperparameters
