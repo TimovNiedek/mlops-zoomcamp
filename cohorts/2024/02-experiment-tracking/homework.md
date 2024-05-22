@@ -131,6 +131,10 @@ What's the best validation RMSE that you got?
 * 5.818
 * 6.336
 
+### Answer
+
+5.335
+
 
 ## Q6. Promote the best model to the model registry
 
