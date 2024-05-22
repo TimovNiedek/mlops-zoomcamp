@@ -155,6 +155,9 @@ What is the test RMSE of the best model?
 * 6.061
 * 6.568
 
+### Answer
+
+5.567
 
 ## Submit the results
 
