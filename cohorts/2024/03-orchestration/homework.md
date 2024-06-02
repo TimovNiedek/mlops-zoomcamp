@@ -174,6 +174,10 @@ Find the logged model, and find MLModel file. What's the size of the model? (`mo
 > Note: typically we do two last steps in one code block 
 
 
+### Answer
+
+4534
+
 ## Submit the results
 
 * Submit your results here: https://courses.datatalks.club/mlops-zoomcamp-2024/homework/hw3
