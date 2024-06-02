@@ -12,6 +12,10 @@ What's the version of Mage we run?
 
 (You can see it in the UI)
 
+### Answer
+
+v0.9.70
+
 
 ## Question 2. Creating a project
 
@@ -23,6 +27,10 @@ How many lines are in the created `metadata.yaml` file?
 - 45
 - 55
 - 65
+
+### Answer
+
+55
 
 ## Question 3. Creating a pipeline
 
@@ -36,6 +44,10 @@ How many records did we load?
 - 3,203,766
 - 3,403,766
 - 3,603,766
+
+### Answer
+
+3403766
 
 ## Question 4. Data preparation
 
@@ -69,6 +81,10 @@ What's the size of the result?
 - 3,316,216 
 - 3,503,766
 
+### Answer
+
+3,316,216
+
 ## Question 5. Train a model
 
 We will now train a linear regression model using the same code as in homework 1
@@ -87,6 +103,10 @@ Hint: print the `intercept_` field in the code block
 - 24.77
 - 27.77
 - 31.77
+
+### Answer
+
+24.77
 
 ## Question 6. Register the model 
 
@@ -153,6 +173,10 @@ Find the logged model, and find MLModel file. What's the size of the model? (`mo
 
 > Note: typically we do two last steps in one code block 
 
+
+### Answer
+
+4534
 
 ## Submit the results
 
