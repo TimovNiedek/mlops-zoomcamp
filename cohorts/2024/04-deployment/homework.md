@@ -110,6 +110,10 @@ What's the mean predicted duration?
 
 Hint: just add a print statement to your script.
 
+### Answer:
+
+14.203865642696083 (14.29 is closest)
+
 
 ## Q6. Docker container 
 
