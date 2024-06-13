@@ -45,15 +45,14 @@ def save_output(df, output_file) -> None:
 def predict(year: int, month: int, model_file: str, output_file: str) -> None:
     if not output_file.endswith('.parquet'):
         print('Output file must be a .parquet file')
-        typer.Exit(code=1)
+        raise typer.Exit(code=1)
 
     try:
         with open(model_file, 'rb') as f_in:
             dv, model = pickle.load(f_in)
     except:
         print(f'Unable to load model from {model_file}')
-        typer.Exit(code=1)
-        
+        raise typer.Exit(code=1)
     
     df = read_data(year, month)
     df_result = apply_model(df, dv, model)

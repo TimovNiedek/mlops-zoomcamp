@@ -112,7 +112,7 @@ Hint: just add a print statement to your script.
 
 ### Answer:
 
-14.203865642696083 (14.29 is closest)
+14.29
 
 
 ## Q6. Docker container 
@@ -154,6 +154,10 @@ for May 2023?
 * 7.24
 * 14.24
 * 21.19
+
+### Answer
+
+0.19
 
 
 ## Bonus: upload the result to the cloud (Not graded)
