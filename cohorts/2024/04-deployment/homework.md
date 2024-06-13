@@ -19,6 +19,10 @@ What's the standard deviation of the predicted duration for this dataset?
 * 12.28
 * 18.28
 
+### Answer
+
+6.24
+
 
 ## Q2. Preparing the output
 
