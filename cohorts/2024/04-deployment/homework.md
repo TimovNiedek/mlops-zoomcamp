@@ -68,6 +68,13 @@ Now let's turn the notebook into a script.
 
 Which command you need to execute for that?
 
+### Answer
+
+```
+jupyter nbconvert --to script starter.ipynb
+```
+
+But it's almost never a good idea to convert notebooks to python scripts directly :) 
 
 ## Q4. Virtual environment
 
