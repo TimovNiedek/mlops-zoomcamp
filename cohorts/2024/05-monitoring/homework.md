@@ -16,6 +16,10 @@ What is the shape of the downloaded data? How many rows are there?
 * 54396
 
 
+### Answer
+
+57457 rows.
+
 ## Q2. Metric
 
 Let's expand the number of data quality metrics we’d like to monitor! Please add one metric of your choice and a quantile value for the `"fare_amount"` column (`quantile=0.5`).
