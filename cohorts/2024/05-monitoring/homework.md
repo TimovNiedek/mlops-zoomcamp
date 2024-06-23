@@ -29,6 +29,11 @@ Hint: explore evidently metric `ColumnQuantileMetric` (from `evidently.metrics i
 What metric did you choose?
 
 
+### Answer
+
+I added ColumnCorrelationsMetric to check correlation between numerical features and predictions.
+
+
 ## Q3. Monitoring
 
 Let’s start monitoring. Run expanded monitoring for a new batch of data (March 2024). 
