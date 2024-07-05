@@ -8,16 +8,17 @@ import pandas as pd
 from typing import List
 
 
-def read_data(filename: str, categorical_cols: List[str]) -> pd.DataFrame:
-    df = pd.read_parquet(filename)
-    
+def read_data(filename: str) -> pd.DataFrame:
+    return pd.read_parquet(filename)
+
+
+def prepare_data(df: pd.DataFrame, categorical_cols: List[str]) -> pd.DataFrame:
     df['duration'] = df.tpep_dropoff_datetime - df.tpep_pickup_datetime
     df['duration'] = df.duration.dt.total_seconds() / 60
 
     df = df[(df.duration >= 1) & (df.duration <= 60)].copy()
 
     df[categorical_cols] = df[categorical_cols].fillna(-1).astype('int').astype('str')
-    
     return df
 
 
@@ -30,9 +31,10 @@ def main(year: int, month: int) -> None:
         dv, lr = pickle.load(f_in)
 
 
-    categorical = ['PULocationID', 'DOLocationID']
+    categorical_cols = ['PULocationID', 'DOLocationID']
 
-    df = read_data(input_file, categorical)
+    df = read_data(input_file)
+    df = prepare_data(df, categorical_cols)
     df['ride_id'] = f'{year:04d}/{month:02d}_' + df.index.astype('str')
 
 

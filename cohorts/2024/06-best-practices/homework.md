@@ -56,6 +56,11 @@ Hint: to be able to test `batch.py`, we need to be able to
 import it. Without this other file, we won't be able to do it.
 
 
+### Answer
+
+`__init__.py`
+
+
 ## Q3. Writing first unit test
 
 Now let's cover our code with unit tests.
@@ -107,6 +112,10 @@ How many rows should be there in the expected dataframe?
 * 2
 * 3
 * 4
+
+### Answer
+
+2 rows.
 
 
 ## Q4. Mocking S3 with Localstack 
