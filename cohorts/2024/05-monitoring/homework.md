@@ -16,6 +16,10 @@ What is the shape of the downloaded data? How many rows are there?
 * 54396
 
 
+### Answer
+
+57457 rows.
+
 ## Q2. Metric
 
 Let's expand the number of data quality metrics we’d like to monitor! Please add one metric of your choice and a quantile value for the `"fare_amount"` column (`quantile=0.5`).
@@ -23,6 +27,11 @@ Let's expand the number of data quality metrics we’d like to monitor! Please a
 Hint: explore evidently metric `ColumnQuantileMetric` (from `evidently.metrics import ColumnQuantileMetric`) 
 
 What metric did you choose?
+
+
+### Answer
+
+I added ColumnCorrelationsMetric to check correlation between numerical features and predictions.
 
 
 ## Q3. Monitoring
@@ -36,9 +45,12 @@ What is the maximum value of metric `quantile = 0.5` on the `"fare_amount"` colu
 * 14.2
 * 14.8
 
+### Answer
+
+14.2
+
 
 ## Q4. Dashboard
-
 
 Finally, let’s add panels with new added metrics to the dashboard. After we customize the  dashboard let's save a dashboard config, so that we can access it later. Hint: click on “Save dashboard” to access JSON configuration of the dashboard. This configuration should be saved locally.
 
@@ -48,6 +60,10 @@ Where to place a dashboard config file?
 * `project_folder/config`  (05-monitoring/config)
 * `project_folder/dashboards`  (05-monitoring/dashboards)
 * `project_folder/data`  (05-monitoring/data)
+
+### Answer
+
+`project_folder/dashboards`
 
 
 ## Submit the results
