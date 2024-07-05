@@ -31,6 +31,14 @@ filesystem. E.g. here:
 output_file = f'taxi_type=yellow_year={year:04d}_month={month:02d}.parquet'
 ```
 
+### Answer:
+
+```python
+if __name__ == '__main__':
+    main(int(sys.argv[1]), int(sys.argv[2]))
+```
+
+
 ## Q2. Installing pytest
 
 Now we need to install `pytest`:
