@@ -4,6 +4,8 @@ In this homework, we'll deploy the ride duration model in batch mode. Like in ho
 
 You'll find the starter code in the [homework](homework) directory.
 
+Solution: [homework_solution/](homework_solution/)
+
 
 ## Q1. Notebook
 
@@ -121,7 +123,8 @@ Finally, we'll package the script in the docker container.
 For that, you'll need to use a base image that we prepared. 
 
 This is what the content of this image is:
-```
+
+```dockerfile
 FROM python:3.10.13-slim
 
 WORKDIR /app
@@ -135,7 +138,7 @@ which you need to use as your base image.
 
 That is, your Dockerfile should start with:
 
-```docker
+```dockerfile
 FROM agrigorev/zoomcamp-model:mlops-2024-3.10.13-slim
 
 # do stuff here
