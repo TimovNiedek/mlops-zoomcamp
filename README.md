@@ -21,6 +21,16 @@ Our MLOps Zoomcamp course
 - For announcements, join our [Telegram channel](https://t.me/dtc_courses)
 
 
+## Tools used
+
+* MLFlow (experiment tracking)
+* Amazon EC2 (development instance)
+* sklearn (prediction)
+* Mage (orchestration)
+* Evidently AI (monitoring ML metrics)
+* PostgreSQL (ML metrics store)
+* Grafana (ML metrics dashboard)
+
 ## Taking the course
 
 ### 2024 Cohort
