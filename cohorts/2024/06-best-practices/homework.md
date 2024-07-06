@@ -150,6 +150,16 @@ In both cases we should adjust commands for localstack. What option do we need t
 * `--version`
 
 
+### Answer
+
+The commands are
+
+```
+aws --endpoint-url http://localhost:4566 s3 mb s3://nyc-duration
+aws --endpoint-url http://localhost:4566 s3 ls
+```
+
+
 ## Make input and output paths configurable
 
 Right now the input and output paths are hardcoded, but we want
@@ -249,6 +259,15 @@ engine and compression. Even if you use this exact snippet, the size
 of your dataframe may still be a bit off. Just select the closest option.
 
 
+### Answer
+
+```aws --endpoint-url http://localhost:4566 s3 ls s3://nyc-duration```
+
+returns:
+
+3520
+
+
 ## Q6. Finish the integration test
 
 We can read from our localstack s3, but we also need to write to it.
@@ -273,6 +292,11 @@ What's the sum of predicted durations for the test dataframe?
 * 36.28
 * 69.28
 * 81.08
+
+
+### Answer
+
+* 36.28
 
 
 ## Running the test (ungraded)
