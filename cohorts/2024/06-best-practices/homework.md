@@ -31,6 +31,14 @@ filesystem. E.g. here:
 output_file = f'taxi_type=yellow_year={year:04d}_month={month:02d}.parquet'
 ```
 
+### Answer:
+
+```python
+if __name__ == '__main__':
+    main(int(sys.argv[1]), int(sys.argv[2]))
+```
+
+
 ## Q2. Installing pytest
 
 Now we need to install `pytest`:
@@ -46,6 +54,11 @@ What should be the other file?
 
 Hint: to be able to test `batch.py`, we need to be able to
 import it. Without this other file, we won't be able to do it.
+
+
+### Answer
+
+`__init__.py`
 
 
 ## Q3. Writing first unit test
@@ -100,6 +113,10 @@ How many rows should be there in the expected dataframe?
 * 3
 * 4
 
+### Answer
+
+2 rows.
+
 
 ## Q4. Mocking S3 with Localstack 
 
@@ -131,6 +148,16 @@ In both cases we should adjust commands for localstack. What option do we need t
 * `--profile`
 * `--endpoint-url`
 * `--version`
+
+
+### Answer
+
+The commands are
+
+```
+aws --endpoint-url http://localhost:4566 s3 mb s3://nyc-duration
+aws --endpoint-url http://localhost:4566 s3 ls
+```
 
 
 ## Make input and output paths configurable
@@ -232,6 +259,15 @@ engine and compression. Even if you use this exact snippet, the size
 of your dataframe may still be a bit off. Just select the closest option.
 
 
+### Answer
+
+```aws --endpoint-url http://localhost:4566 s3 ls s3://nyc-duration```
+
+returns:
+
+3520
+
+
 ## Q6. Finish the integration test
 
 We can read from our localstack s3, but we also need to write to it.
@@ -256,6 +292,11 @@ What's the sum of predicted durations for the test dataframe?
 * 36.28
 * 69.28
 * 81.08
+
+
+### Answer
+
+* 36.28
 
 
 ## Running the test (ungraded)
